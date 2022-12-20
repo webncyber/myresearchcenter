@@ -1,0 +1,15 @@
+@import './Images.scss'; 
+.container{
+
+}
+.row{
+    display: flex;
+}
+
+.col{
+
+}
+
+.bkghome{
+    background-image: url($bkghome);
+}
