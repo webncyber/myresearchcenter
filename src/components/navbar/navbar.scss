@@ -1,0 +1,52 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 30px;
+    justify-content: space-between;
+    overflow: hidden;
+    width: 75%;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 50px;
+    ul {
+        list-style-type: none;
+        display: inline-block;
+        width: 100%;
+    }
+
+    li {
+        display: inline;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        svg {
+            margin-right: 6px;
+            vertical-align: text-bottom;
+        }
+
+        a {
+            color: rgb(253, 253, 253);
+            text-decoration: none;
+            text-transform: uppercase;
+
+        }
+    }
+}
+
+#nav-desktop{
+    @media screen and (max-width: 660px) {
+        display: none;
+      }
+}
+
+#nav-mobile{
+    @media screen and (min-width: 659px) {
+        display: none;
+      }
+}
+
+#nav-mobile{
+    ul{
+        background-color: white;
+    }
+}

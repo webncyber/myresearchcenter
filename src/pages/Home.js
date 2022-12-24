@@ -1,13 +1,44 @@
 import '../Styles/Layout.scss'
-import {Container, Row, Col} from 'react-bootstrap';
-import Button from 'react-bootstrap/Button';
+import Hero from '../components/Hero/'
+import NavBar from '../components/navbar';
+import homeImagePath from '../Images/bkgHome.jpg'
+import { Helmet } from 'react-helmet';
+
 
 function App() {
   return (
+    
    <div className='container'>
-      <div className='row'>
-        <div className='col'>Col1 </div>
-        <div className='col'>Col 2 </div>
+    <Helmet>
+        <meta charSet='utf-8'/>
+        <title>My Research Center</title>
+        <link rel="canonical" href="" />
+      </Helmet>
+      <Hero url={homeImagePath} />
+      <NavBar/>
+      <div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       </div>
    </div>
   );

@@ -1,6 +1,14 @@
 @import './Images.scss'; 
-.container{
+@import '../components/Hero/hero.scss';
+@import '../components/navbar/navbar.scss';
 
+body{
+    font-family: roboto,helvetica,arial,sans-serif;
+    font-weight: 300;
+}
+
+.container{
+   text-align: center;
 }
 .row{
     display: flex;
@@ -10,6 +18,4 @@
 
 }
 
-.bkghome{
-    background-image: url($bkghome);
-}
+
