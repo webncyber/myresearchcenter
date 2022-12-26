@@ -8,13 +8,13 @@ import { Helmet } from 'react-helmet';
 function App() {
   return (
     
-   <div className='container'>
+   <div >
     <Helmet>
         <meta charSet='utf-8'/>
         <title>My Research Center</title>
         <link rel="canonical" href="" />
       </Helmet>
-      <Hero url={homeImagePath} />
+      <Hero url={homeImagePath} headingOne="Ideas.........." headingTow="are where your research begins!" />
       <NavBar/>
       <div>
       <br></br>

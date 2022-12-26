@@ -1,4 +1,3 @@
-import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 
 function Hero(props){
 
@@ -7,7 +6,8 @@ function Hero(props){
     }
     return(
             <div className="hero" style={divImage}>
-                <div>Hero Text...</div>
+               <h1>{props.headingOne}</h1>
+               <h2>{props.headingTow}</h2>
              </div>
       
     );
