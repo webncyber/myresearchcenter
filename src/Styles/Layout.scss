@@ -8,8 +8,11 @@ body{
 }
 
 .container{
-   text-align: center;
+   position: relative;
+   display: flex;
+   justify-content: center;
 }
+
 .row{
     display: flex;
 }
@@ -19,3 +22,22 @@ body{
 }
 
 
+.heading-section{
+    width: 100%;
+}
+.content-section{
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
+    width: 80%;
+    position: absolute;
+
+    @media screen and (max-width: 660px) {
+        top: 390px;
+      }
+
+      @media screen and (min-width: 660px) {
+        top: 500px;
+      }
+   
+}
