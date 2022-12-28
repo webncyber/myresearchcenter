@@ -1,4 +1,4 @@
-import './navbar.scss'
+import './style.scss'
 import { AiOutlineMail } from "react-icons/ai";
 import { FaHome, FaBlogger } from "react-icons/fa";
 import { SlSocialYoutube } from "react-icons/sl";

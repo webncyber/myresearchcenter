@@ -1,15 +1,27 @@
 
-function Hero(props){
+function Hero(props) {
 
     var divImage = {
-        backgroundImage: "url("+props.url+")"
+        backgroundImage: "url(" + props.url + ")"
     }
-    return(
-            <div className="hero" style={divImage}>
-               <h1>{props.headingOne}</h1>
-               <h2>{props.headingTow}</h2>
-             </div>
-      
+    return (
+        <div className="hero" style={divImage}>
+            {props.headingOne && props.headingTwo && (
+                <div>
+                    <div className="title">{props.headingOne}</div>
+                    <div className="sub-title">{props.headingTwo}</div>
+                </div>
+            )
+            }
+
+            {props.headingOne && !props.headingTwo && (
+                <div>
+                    <h1>{props.headingOne}</h1>
+                </div>
+            )
+            }
+        </div>
+
     );
 
 }

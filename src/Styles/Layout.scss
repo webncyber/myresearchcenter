@@ -1,6 +1,6 @@
 @import './Images.scss'; 
-@import '../components/Hero/hero.scss';
-@import '../components/navbar/navbar.scss';
+@import '../components/Hero/style.scss';
+@import '../components/navbar/style.scss';
 
 body{
     font-family: roboto,helvetica,arial,sans-serif;
@@ -21,23 +21,21 @@ body{
 
 }
 
-
 .heading-section{
     width: 100%;
 }
-.content-section{
 
+.content-section{
     background-color: rgb(255, 255, 255);
     border-radius: 6px;
-    width: 80%;
+    width: 90%;
     position: absolute;
 
     @media screen and (max-width: 660px) {
-        top: 390px;
+        top: 400px;
       }
 
       @media screen and (min-width: 660px) {
         top: 500px;
       }
-   
 }

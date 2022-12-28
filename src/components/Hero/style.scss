@@ -1,0 +1,41 @@
+
+.hero{
+    border: 0;
+    height: 90vh;
+    display: flex;
+    padding: 0;
+/*     overflow: hidden;
+    position: relative; */
+    max-height: 1000px;
+    align-items: baseline;
+    background-size: cover;
+    background-position: center center;
+   div:first-child {
+    padding-top: 6.5rem;
+    padding-left: 2rem;
+    width: 100%;
+        h1{
+            width: 95%;
+            padding-top: 3rem;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-size: 3rem;
+        }
+        .title{
+            width: 40%;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-size: 3rem;
+        }
+        .sub-title{
+            width: 80%;
+            text-align: right;
+            color: white;
+            font-weight: 400;
+            font-size: 3rem;
+            padding-top: 1rem;
+        }
+   }
+}
