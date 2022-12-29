@@ -1,13 +1,12 @@
 import '../../../Styles/Layout.scss'
 import Hero from '../../../components/hero'
 import NavBar from '../../../components/navbar';
-import homeImagePath from '../../../Images/bkgHome.jpg'
-import { Helmet } from 'react-helmet';
 import SingleColumnContent from '../../../components/singleColumnContent';
 import React, { useState , useEffect } from 'react';
+import SEO from '../../../components/seo';
 
 const BlogDetails = (props) => {
-  const [blog,setData] = useState([]);
+  const [blog, setData] = useState([]);
   let blogId = props.blogId;
 
   useEffect(() => {
@@ -16,8 +15,10 @@ const BlogDetails = (props) => {
     const fetchData = async () => {
       try {
         const response = await fetch(url);
-        const blog = await response.json();
-        setData(blog);
+        const blogData = await response.json();
+        setData(blogData);
+        document.title = blogData.metadata.browsertitle;
+       
       } catch (error) {
         //console.log("error", error);
       }
@@ -26,17 +27,15 @@ const BlogDetails = (props) => {
     fetchData();
 }, []);
   
-  return (
-   <div className='container'>
-    <Helmet>
-        <meta charSet='utf-8'/>
-        <title>My Research Center</title>
-        <link rel="canonical" href="" />
-      </Helmet>
 
+  return (
+   
+   <div className='container'>
+    <SEO title="" description="ideas and blogs" keywords="key1, key2" url={"/blogs/" + blogId}/>
+    
       <div className='heading-section'>
         <NavBar/>
-        <Hero url={homeImagePath} headingOne={blog.title}  />
+        <Hero url={blog.heroImageURL} headingOne={blog.title}  />
       </div>
       <div className='content-section'>
           <SingleColumnContent heading={blog.title} content={blog.content}/>

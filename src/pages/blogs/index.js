@@ -1,8 +1,7 @@
 import '../../Styles/Layout.scss'
 import Hero from '../../components/hero'
 import NavBar from '../../components/navbar';
-import homeImagePath from '../../Images/bkgHome.jpg'
-import { Helmet } from 'react-helmet';
+import SEO from '../../components/seo';
 import SingleColumnContent from '../../components/singleColumnContent'
 
 
@@ -10,15 +9,11 @@ function Blogs() {
   return (
     
    <div className='container'>
-    <Helmet>
-        <meta charSet='utf-8'/>
-        <title>My Research Center</title>
-        <link rel="canonical" href="" />
-      </Helmet>
-
+     <SEO title="My Research Center - Blogs" description="ideas and blogs" keywords="key1, key2" url="/blogs"/>
+   
       <div className='heading-section'>
         <NavBar/>
-        <Hero url={homeImagePath} headingOne="Welcome to blogs center!"  />
+        <Hero url="/Images/blogs-landing.jpg" headingOne="Blogs Center"  />
       </div>
       <div className='content-section'>
           <SingleColumnContent heading="My research blogs" content={GetContent()}/>
