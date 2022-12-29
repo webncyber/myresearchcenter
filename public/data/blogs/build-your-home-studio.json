@@ -1,7 +1,8 @@
 {
-    "title": "How to build a decent home studio?",
+    "title": "Build your music home studio...",
+    "subtitle": "How to build a decent home studio?",
     "content": "This is <i>blog content</i>",
-    "heroImageURL": "/Images/home-studio-hero.jpg",
+    "heroimageurl": "/Images/home-studio-hero.jpg",
     "metadata":{
         "browsertitle": "Blogs: Build your home studio!",
         "keyword": "",

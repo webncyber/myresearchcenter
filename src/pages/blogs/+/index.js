@@ -35,10 +35,10 @@ const BlogDetails = (props) => {
     
       <div className='heading-section'>
         <NavBar/>
-        <Hero url={blog.heroImageURL} headingOne={blog.title}  />
+        <Hero url={blog.heroimageurl} headingOne={blog.title}  />
       </div>
       <div className='content-section'>
-          <SingleColumnContent heading={blog.title} content={blog.content}/>
+          <SingleColumnContent heading={blog.subtitle} content={blog.content}/>
       </div>
    </div>
   );
