@@ -1,15 +1,14 @@
 
 import Hero from './style.scss'
-function SingleColumnContent(props){
+
+
+const SingleColumnContent = (props) => {
     return(
         <div className="single-column-content">
             <h2>{props.heading}</h2>
-            <div className='content'>
-               {props.content}
-            </div>
+            <div className='content' dangerouslySetInnerHTML={{ __html: props.content }} />
         </div>
     );
+   };
 
-}
-
-export default SingleColumnContent;
+   export default SingleColumnContent;

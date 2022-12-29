@@ -14,19 +14,21 @@ function NavBar() {
             <div id="nav-desktop" className='navbar'>
                 <div></div>
                 <div>
-                    <FaHome style={{ color: 'white', fontSize: '40px' }} />
+                    <a href='/'>
+                        <FaHome style={{ color: 'white', fontSize: '40px' }} />
+                    </a>
                 </div>
                 <div>
                     <ul>
                         <li><a href='/blogs'>
                             <FaBlogger style={{ color: 'white', fontSize: '20px' }} />
                             Blogs</a></li>
-                        <li><a href=''>
+                        <li><a href='mailto:webncyber@gmail.com'>
                             <AiOutlineMail style={{ color: 'white', fontSize: '20px' }} />
-                            Email</a></li>
+                            Contact</a></li>
                         <li>
                             <SlSocialYoutube style={{ color: 'white', fontSize: '20px' }} />
-                            <a href=''>Youtube</a></li></ul>
+                            <a href='https://www.youtube.com/@webncyber' target={'_blank'}>Youtube</a></li></ul>
                 </div>
             </div>
 

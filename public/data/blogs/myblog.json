@@ -1,0 +1,10 @@
+{
+    "title": "This is my first blog",
+    "content": "This is <i>blog content</i>",
+    "heroImageURL": "",
+    "metadata":{
+        "browserTitle": "",
+        "metaKeyword": "",
+        "metaDescription": ""
+    }
+}
