@@ -1,5 +1,5 @@
 
-function Hero(props) {
+const Hero = (props) => {
 
     var divImage = {
         backgroundImage: "url(" + props.url + ")"

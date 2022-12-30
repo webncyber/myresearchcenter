@@ -6,7 +6,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import React, { useState } from 'react';
 
 
-function NavBar() {
+const NavBar = () => {
     const [toggle, showMobileMenu] = useState(false);
 
     return (
