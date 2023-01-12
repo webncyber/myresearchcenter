@@ -15,6 +15,11 @@ body{
 
 .row{
     display: flex;
+    div{
+        width: 100%;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
 }
 
 .col{
