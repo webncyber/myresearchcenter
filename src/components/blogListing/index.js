@@ -11,7 +11,7 @@ const BlogListing = () =>{
             const response = await fetch(url);
             const blogData = await response.json();
             setData(blogData);
-           console.log("blogs", blogData);
+           
           } catch (error) {
             //console.log("error", error);
           }
@@ -22,7 +22,12 @@ const BlogListing = () =>{
       
     return(
         <div>
-          
+          {
+             <ul>
+              {blogs.map(blog =>
+              <li key={blog}>{blog.title}</li>
+             )}
+           </ul>}
         </div>
     )
 }

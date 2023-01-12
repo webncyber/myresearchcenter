@@ -1,12 +1,8 @@
-{
-    "bloglisting": [
-        {
-            "blogitem": {
-                "id": "build-your-home-studio",
-                "title": "How to build a decent home studio?",
-                "blurb": "blurb....",
-                "heroimageurl": "/Images/home-studio-hero.jpg"
-            }
-        }
-    ]
-}
+[
+    {
+        "id": "build-your-home-studio",
+        "title": "How to build a decent home studio?",
+        "blurb": "blurb....",
+        "heroimageurl": "/Images/home-studio-hero.jpg"
+    }
+]

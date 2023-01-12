@@ -16,7 +16,7 @@ function Blogs() {
         <Hero url="/Images/blogs-landing.jpg" headingOne="Blogs Center"  />
       </div>
       <div className='content-section'>
-          <SingleColumnContent heading="My research blogs" content={GetContent()}/>
+          <SingleColumnContent heading="Blogs" content={GetContent()}/>
       </div>
 
       {/* <Hero url={homeImagePath} headingOne="Ideas.........." headingTow="are where your research begins!" />
