@@ -31,7 +31,7 @@ function GetContent()
   <div>
     <div className='content'>
         <div className='row'>
-          <div className='img-box'><img width={100} src='/Images/researchImage.jpg'></img></div>
+          <div className='img-box fit'><img width={100} src='/Images/researchImage.jpg'></img></div>
           <div>
           Have you ever spent time on doing some research about something? Or to make some important decision to buy something? 
           Or to find out which process is better for some specific need? Then, <strong>Research Center</strong> is the place for you. It is the place where you can find out many topics about certain products, and put your thoughts together!
@@ -45,7 +45,7 @@ function GetContent()
       </div>
     </div>
     
-    <div className='row'>
+    <div className='row cal'>
       <div>What is My Research Center?</div>
       <div>Why to use it?</div>
   </div>
