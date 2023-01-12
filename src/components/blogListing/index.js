@@ -21,7 +21,12 @@ const BlogListing = () =>{
     }, []); 
       
     return(
-        <div></div>
+        <div>
+          
+          {blogs.map((blog) => (
+            <div>{blog}</div>
+        ))}
+        </div>
     )
 }
 
