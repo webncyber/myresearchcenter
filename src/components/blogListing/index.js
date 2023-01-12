@@ -23,9 +23,6 @@ const BlogListing = () =>{
     return(
         <div>
           
-          {blogs.map((blog) => (
-            <div>{blog}</div>
-        ))}
         </div>
     )
 }
