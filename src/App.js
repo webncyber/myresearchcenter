@@ -23,7 +23,7 @@ function App()
       <Route path="/blogs">
         <Route index element={<Blogs />} />
       </Route>
-      <Route path="/blogs/:path">
+      <Route path="/blogs/music/:path">
         <Route index element={<BlogDetails blogId={lastDir} />} />
       </Route>
     </Routes>

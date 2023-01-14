@@ -10,7 +10,7 @@ const BlogDetails = (props) => {
   let blogId = props.blogId;
 
   useEffect(() => {
-    const url = "/data/blogs/"+blogId+".json";
+    const url = "/data/blogs/music/"+blogId+".json";
 
     const fetchData = async () => {
       try {
