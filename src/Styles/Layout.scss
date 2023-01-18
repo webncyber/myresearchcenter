@@ -41,20 +41,45 @@ body{
     position: absolute;
 
     @media screen and (max-width: 660px) {
-        top: 400px;
+        top: 300px;
       }
 
       @media screen and (min-width: 660px) {
-        top: 500px;
+        top: 400px;
       }
 }
 
 .content{
     padding-bottom: 1rem;
-
+    width: 85%;
+   
     h4{
         padding: 0px;
-        margin: 0px;;
+        margin: 0px;
+        margin-bottom: 0.5rem;
+        text-transform: capitalize;
+    }
+
+    ul{
+        li{
+            padding-bottom: 0.6rem;
+        }
+    }
+
+    p{
+        margin-top: 0.5rem;
+    }
+
+    a{
+        color: blue;
+        font-size: 15px;
+        &:hover{
+           text-decoration: none;
+        }
+    }
+
+    a:visited {
+        color: blue;
     }
 }
 
