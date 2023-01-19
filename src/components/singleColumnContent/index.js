@@ -7,7 +7,9 @@ const SingleColumnContent = (props) => {
 
     return(
         <div className="single-column-content">
-            <h2>{props.heading}</h2>
+            <h2>
+                {props.heading}</h2>
+            
             {isJsx && (
                  <div className='content' >{props.content}</div>
             )

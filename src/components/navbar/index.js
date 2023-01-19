@@ -1,25 +1,47 @@
 import './style.scss'
-import { AiOutlineMail } from "react-icons/ai";
+import { AiOutlineMail, AiOutlineFacebook, AiOutlineLinkedin } from "react-icons/ai";
 import { FaHome, FaBlogger } from "react-icons/fa";
-import { SlSocialYoutube } from "react-icons/sl";
+import { SlSocialYoutube, SlSocialTwitter } from "react-icons/sl";
 import { GiHamburgerMenu } from "react-icons/gi";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 
 const NavBar = () => {
     const [toggle, showMobileMenu] = useState(false);
+    const [setNavBG, setNavbarBgColor] = useState(false);
+    const browserTitle = document.title;
+    const currentURL = window.location.href;
+    const fbPostURL = "http://www.facebook.com/share.php?u=" + currentURL;
+    const twittURL = "https://twitter.com/intent/tweet?text=" + browserTitle + " " +  currentURL;
+    const linkedInURL = "https://www.linkedin.com/shareArticle?url="+currentURL+"&title="+browserTitle+"";
 
+    const changeBackground = () => {
+        console.log(window.scrollY)
+        if (window.scrollY >= 66) {
+            setNavbarBgColor(true)
+        } else {
+            setNavbarBgColor(false)
+        }
+      }
+      useEffect(() => {
+        changeBackground()
+        // adding the event when scroll change background
+        window.addEventListener("scroll", changeBackground)
+      })
+    
+      
     return (
         <div>
-            <div id="nav-desktop" className='navbar'>
+            <div id="nav-desktop" className={setNavBG ? "navbar nav-bg-color" : "navbar"}>
                 <div></div>
-                <div>
-                    <a href='/'>
-                        <FaHome style={{ color: 'white', fontSize: '40px' }} />
-                    </a>
-                </div>
+               
                 <div>
                     <ul>
+                        <li>
+                            <a href='/'>
+                            <FaHome style={{ color: 'white', fontSize: '30px' }} />
+                            </a>
+                        </li>
                         <li><a href='/blogs'>
                             <FaBlogger style={{ color: 'white', fontSize: '20px' }} />
                             Blogs</a></li>
@@ -27,8 +49,31 @@ const NavBar = () => {
                             <AiOutlineMail style={{ color: 'white', fontSize: '20px' }} />
                             Contact</a></li>
                         <li>
+                           
+                            <a title='Youtube' href='https://www.youtube.com/@webncyber' target={'_blank'}>
                             <SlSocialYoutube style={{ color: 'white', fontSize: '20px' }} />
-                            <a href='https://www.youtube.com/@webncyber' target={'_blank'}>Youtube</a></li></ul>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a title='Share on Linkedin' target={'_blank'} href={linkedInURL}>
+                                <AiOutlineLinkedin style={{ color: 'white', fontSize: '20px' }} />
+                            </a>
+                        </li>
+
+                        <li>
+                            <a title='Share on Facebook' target={'_blank'} href={fbPostURL}>
+                                <AiOutlineFacebook style={{ color: 'white', fontSize: '20px' }} />
+                            </a>
+                        </li>
+
+                        <li>
+                           <a  title='Share on Twitter' target={'_blank'} href={twittURL}>
+                                <SlSocialTwitter style={{ color: 'white', fontSize: '20px' }} />
+                           </a>
+                        </li>
+
+                        </ul>
                 </div>
             </div>
 
@@ -43,10 +88,24 @@ const NavBar = () => {
                         <li><a href='/blogs'>
 
                             Blogs</a></li>
-                        <li><a href=''>
-                            Email</a></li>
+                        <li><a href='mailto:webncyber@gmail.com'>
+                            Contact</a></li>
                         <li>
-                            <a href=''>Youtube</a></li>
+                           
+                            <a title='Youtube' href='https://www.youtube.com/@webncyber' target={'_blank'}>
+                            <SlSocialYoutube style={{ color: 'black', fontSize: '20px' }} />
+                            </a>     
+                            <a title='Share on Linkedin' target={'_blank'} href={linkedInURL}>
+                                <AiOutlineLinkedin style={{ color: 'black', fontSize: '20px' }} />
+                            </a>   
+                            <a title='Share on Facebook' target={'_blank'} href={fbPostURL}>
+                                <AiOutlineFacebook style={{ color: 'black', fontSize: '20px' }} />
+                            </a>   
+                            <a  title='Share on Twitter' target={'_blank'} href={twittURL}>
+                                <SlSocialTwitter style={{ color: 'black', fontSize: '20px' }} />
+                           </a>
+                        </li>
+                      
                     </ul>
                 )
 
