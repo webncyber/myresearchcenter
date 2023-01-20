@@ -1,6 +1,6 @@
 import '../../Styles/Layout.scss'
 import Hero from '../../components/hero'
-import NavBar from '../../components/navbar';
+import TopNav from '../../components/navbar/topnav';
 import SEO from '../../components/seo';
 import SingleColumnContent from '../../components/singleColumnContent'
 import BlogListing from '../../components/blogListing';
@@ -12,7 +12,7 @@ function Blogs() {
      <SEO title="My Research Center - Blogs" description="ideas and blogs" keywords="key1, key2" url="/blogs"/>
    
       <div className='heading-section'>
-        <NavBar/>
+        <TopNav/>
         <Hero url="/Images/blogs-landing.jpg" headingOne="Blogs Center"  />
       </div>
       <div className='content-section'>

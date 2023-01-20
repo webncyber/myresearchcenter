@@ -6,7 +6,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import React, { useState, useEffect } from 'react';
 
 
-const NavBar = () => {
+const TopNav = () => {
     const [toggle, showMobileMenu] = useState(false);
     const [setNavBG, setNavbarBgColor] = useState(false);
     const browserTitle = document.title;
@@ -31,10 +31,8 @@ const NavBar = () => {
     
       
     return (
-        <div>
+        <div className='fit'>
             <div id="nav-desktop" className={setNavBG ? "navbar nav-bg-color" : "navbar"}>
-                <div></div>
-               
                 <div>
                     <ul>
                         <li>
@@ -48,26 +46,25 @@ const NavBar = () => {
                         <li><a href='mailto:webncyber@gmail.com'>
                             <AiOutlineMail style={{ color: 'white', fontSize: '20px' }} />
                             Contact</a></li>
-                        <li>
-                           
+                        <li className='social-link'>
                             <a title='Youtube' href='https://www.youtube.com/@webncyber' target={'_blank'}>
                             <SlSocialYoutube style={{ color: 'white', fontSize: '20px' }} />
                             </a>
                         </li>
 
-                        <li>
+                        <li className='social-link'>
                             <a title='Share on Linkedin' target={'_blank'} href={linkedInURL}>
                                 <AiOutlineLinkedin style={{ color: 'white', fontSize: '20px' }} />
                             </a>
                         </li>
 
-                        <li>
+                        <li className='social-link'>
                             <a title='Share on Facebook' target={'_blank'} href={fbPostURL}>
                                 <AiOutlineFacebook style={{ color: 'white', fontSize: '20px' }} />
                             </a>
                         </li>
 
-                        <li>
+                        <li className='social-link'>
                            <a  title='Share on Twitter' target={'_blank'} href={twittURL}>
                                 <SlSocialTwitter style={{ color: 'white', fontSize: '20px' }} />
                            </a>
@@ -86,7 +83,6 @@ const NavBar = () => {
                     <ul>
                         <li><a href='/'>Home</a></li>
                         <li><a href='/blogs'>
-
                             Blogs</a></li>
                         <li><a href='mailto:webncyber@gmail.com'>
                             Contact</a></li>
@@ -117,4 +113,4 @@ const NavBar = () => {
 }
 
 
-export default NavBar;
+export default TopNav;

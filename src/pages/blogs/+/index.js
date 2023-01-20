@@ -1,6 +1,7 @@
 import '../../../Styles/Layout.scss'
 import Hero from '../../../components/hero'
-import NavBar from '../../../components/navbar';
+import TopNav from '../../../components/navbar/topnav';
+import FooterNav from '../../../components/navbar/footernav';
 import SingleColumnContent from '../../../components/singleColumnContent';
 import React, { useState , useEffect } from 'react';
 import SEO from '../../../components/seo';
@@ -34,15 +35,20 @@ const BlogDetails = (props) => {
     <SEO title="" description="ideas and blogs" keywords="key1, key2" url={"/blogs/" + blogId}/>
     
       <div className='heading-section'>
-        <NavBar/>
+        <TopNav/>
         <Hero url={blog.heroimageurl} headingOne={blog.title}  />
       </div>
       <div className='content-section'>
           <SingleColumnContent heading={blog.subtitle} content={blog.content}/>
+          <div className='footer-section'>
+            <FooterNav/>
+          </div>
       </div>
+
+   
+     
    </div>
   );
 }
-
 
 export default BlogDetails;
