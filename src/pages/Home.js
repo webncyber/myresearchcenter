@@ -4,7 +4,7 @@ import TopNav from '../components/navbar/topnav';
 import SEO from '../components/seo';
 import BlogListing from '../components/blogListing';
 import SingleColumnContent from '../components/singleColumnContent'
-
+import FooterNav from '../components/navbar/footernav';
 
 function App() {
 
@@ -19,6 +19,10 @@ function App() {
       </div>
       <div className='content-section'>
         <SingleColumnContent heading="Welcome to research center" content={GetContent()} />
+
+        <div className='footer-section'>
+            <FooterNav/>
+          </div>
       </div>
 
     </div>

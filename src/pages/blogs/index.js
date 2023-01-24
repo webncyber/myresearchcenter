@@ -4,6 +4,7 @@ import TopNav from '../../components/navbar/topnav';
 import SEO from '../../components/seo';
 import SingleColumnContent from '../../components/singleColumnContent'
 import BlogListing from '../../components/blogListing';
+import FooterNav from '../../components/navbar/footernav';
 
 function Blogs() {
   return (
@@ -17,6 +18,10 @@ function Blogs() {
       </div>
       <div className='content-section'>
           <SingleColumnContent heading="Blogs" content={GetContent()}/>
+
+          <div className='footer-section'>
+            <FooterNav/>
+          </div>
       </div>
 
       {/* <Hero url={homeImagePath} headingOne="Ideas.........." headingTow="are where your research begins!" />
