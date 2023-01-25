@@ -12,7 +12,7 @@ function App() {
 
     <div className='container'>
 
-      <SEO title="My Research Center" description="Welcome to research center" keywords="key1, key2, key3" url="" />
+      <SEO title="My Research Center" robots="index, follow" description="Research Center is where you can find your ideal blog posts for the products you are searching for, and comparing them each other. " keywords="research center, Search, research, products compare, compare" url="" />
       <div className='heading-section'>
         <TopNav />
         <Hero url="/Images/bkgHome.jpg" headingOne="Ideas........." headingTwo="are where your research begins!" />

@@ -32,7 +32,7 @@ const BlogDetails = (props) => {
   return (
    
    <div className='container'>
-    <SEO title="" description="ideas and blogs" keywords="key1, key2" url={"/blogs/" + blogId}/>
+    <SEO title="" robots="index, follow" description={blog.subtitle} keywords={blog.title + ", blog detail, " + blog.subtitle} url={"/blogs/" + blogId}/>
     
       <div className='heading-section'>
         <TopNav/>

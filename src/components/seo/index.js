@@ -14,6 +14,10 @@ const SEO = (props) => {
           name: 'keywords',
           content: props.keywords,
         },
+        {
+          name: "robots", 
+          content: props.robots
+        }
 		]}
     link={[
      {

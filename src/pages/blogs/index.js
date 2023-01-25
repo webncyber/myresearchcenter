@@ -10,7 +10,7 @@ function Blogs() {
   return (
     
    <div className='container'>
-     <SEO title="My Research Center - Blogs" description="ideas and blogs" keywords="key1, key2" url="/blogs"/>
+     <SEO title="My Research Center - Blogs" robots="index, follow"  description="Research Center blogs listing" keywords="blogs, research Center blogs, How to blogs, How to" url="/blogs"/>
    
       <div className='heading-section'>
         <TopNav/>
