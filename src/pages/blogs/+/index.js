@@ -9,7 +9,7 @@ import SEO from '../../../components/seo';
 const BlogDetails = (props) => {
   const [blog, setData] = useState([]);
   let blogId = props.blogId;
-
+  
   useEffect(() => {
     const url = "/data/blogs/music/"+blogId+".json";
 
@@ -28,11 +28,10 @@ const BlogDetails = (props) => {
     fetchData();
 }, []);
   
-
   return (
    
    <div className='container'>
-    <SEO title="" robots="index, follow" description={blog.subtitle} keywords={blog.title + ", blog detail, " + blog.subtitle} url={"/blogs/" + blogId}/>
+    <SEO title="" robots="index, follow" imageUrl={"https://www.myresearchcenter.com" + blog.heroimageurl} description={blog.subtitle} keywords={blog.title + ", blog detail, " + blog.subtitle} url={"/blogs/" + blogId}/>
     
       <div className='heading-section'>
         <TopNav/>
