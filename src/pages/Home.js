@@ -8,14 +8,16 @@ import FooterNav from '../components/navbar/footernav';
 
 function App() {
 
+  let heroImagePath = "/Images/bkgHome.jpg";
+  
   return (
 
     <div className='container'>
 
-      <SEO title="My Research Center" robots="index, follow" description="Research Center is where you can find your ideal blog posts for the products you are searching for, and comparing them each other. " keywords="research center, Search, research, products compare, compare" url="" />
+      <SEO title="My Research Center" robots="index, follow"  imageUrl={"https://www.myresearchcenter.com" + heroImagePath} description="Research Center is where you can find your ideal blog posts for the products you are searching for, and comparing them each other. " keywords="research center, Search, research, products compare, compare" url="" />
       <div className='heading-section'>
         <TopNav />
-        <Hero url="/Images/bkgHome.jpg" headingOne="Ideas........." headingTwo="are where your research begins!" />
+        <Hero url={heroImagePath} headingOne="Ideas........." headingTwo="are where your research begins!" />
       </div>
       <div className='content-section'>
         <SingleColumnContent heading="Welcome to research center" content={GetContent()} />

@@ -17,6 +17,50 @@ const SEO = (props) => {
         {
           name: "robots", 
           content: props.robots
+        },
+        {
+          property: "og:title",
+          content: props.title
+        },
+        {
+          property: "og:type",
+          content: "article",
+        },
+        {
+          property: "og:url",
+          content: canonicalUrl
+        },
+        {
+          property: "og:image",
+          content: props.imageUrl
+        },
+        {
+          property: "og:description",
+          content:  props.description
+        },
+        {
+          property: "og:site_name",
+          content:  "myresearchcenter.com"
+        },
+        {
+          name: "twitter:card", 
+          content: props.imageUrl
+        },
+        {
+          name: "twitter:title", 
+          content: props.title
+        },
+        {
+          name: "twitter:site", 
+          content: "myresearchcenter.com"
+        },
+        {
+          name: "twitter:description", 
+          content:  props.description
+        },
+        {
+          name: "twitter:image:src", 
+          content:  props.imageUrl
         }
 		]}
     link={[
