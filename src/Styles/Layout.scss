@@ -37,9 +37,8 @@ body{
 .content-section{
     background-color: rgb(255, 255, 255);
     border-radius: 6px;
-    width: 90%;
+    width: 83%;
     position: absolute;
-
     @media screen and (max-width: 660px) {
         top: 300px;
       }
@@ -55,15 +54,9 @@ body{
 
 .content{
     padding-bottom: 1rem;
-    width: 85%;
+    width: 95%;
    
-    h4{
-        padding: 0px;
-        margin: 0px;
-        margin-bottom: 0.5rem;
-        text-transform: capitalize;
-    }
-
+    
     ul{
         li{
             padding-bottom: 0.6rem;
